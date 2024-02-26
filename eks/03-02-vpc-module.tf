@@ -7,7 +7,7 @@ data "aws_availability_zones" "available" {
 # Create VPC Terraform Module
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "3.19.0"
+  version = "5.20"
 
   # VPC Basic Details
   name            = "${local.name}-${var.vpc_name}"
