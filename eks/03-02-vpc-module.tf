@@ -16,6 +16,8 @@ module "vpc" {
   public_subnets  = var.vpc_public_subnets
   private_subnets = var.vpc_private_subnets
 
+  map_public_ip_on_launch = true 
+
   # Database Subnets
   create_database_subnet_group       = var.vpc_create_database_subnet_group
   create_database_subnet_route_table = var.vpc_create_database_subnet_route_table
